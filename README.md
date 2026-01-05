@@ -7,15 +7,12 @@ El objetivo es experimentar con:
 - diseño visual tipo arcade/consola
 - organización y lanzamiento de juegos desde una interfaz propia
 
-Actualmente el proyecto **está en construcción**.
-
----
+🚧 Actualmente el proyecto **está en construcción** 🚧
 
 ## Estado del proyecto
 En desarrollo activo.  
 La estructura, animaciones y navegación están siendo iteradas constantemente.
 
----
 
 ## Funcionalidades actuales
 - Interfaz gráfica en Qt (PySide6)
@@ -25,14 +22,12 @@ La estructura, animaciones y navegación están siendo iteradas constantemente.
 - Carga de información desde archivo `games.json`
 - Estilos personalizados con QSS
 
----
 
 ## Tecnologías utilizadas
 - Python 3
 - PySide6 (Qt)
 - Qt Style Sheets (QSS)
 
----
 
 ## Ejecución
 ```python main.py```
