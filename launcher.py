@@ -6,36 +6,35 @@ from PySide6.QtGui import QPixmap, QIcon, QMovie
 from PySide6.QtCore import Qt, QSize
 
 from grid_button import GridButton
-from utils import rounded_pixmap, COVER_WIDTH, COVER_HEIGHT
+from utils import COVER_WIDTH, COVER_HEIGHT
 from styles import LAUNCHER_STYLES
-
 
 class Launcher(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Arcade Launcher")
         self.resize(1280, 720)
+        
+        self.base_path = os.path.dirname(os.path.abspath(__file__))
+        self.movie = None
+        self.bg_pixmap = None
 
         self.setup_background()
         self.setObjectName("MainWindow")
         self.setStyleSheet(LAUNCHER_STYLES)
 
-        # Cargar los juegos
         try:
-            script_dir = os.path.dirname(os.path.abspath(__file__))
-            json_path = os.path.join(script_dir, "data", "games.json")
+            json_path = os.path.join(self.base_path, "data", "games.json")
             with open(json_path, "r", encoding="utf-8") as f:
                 self.games = json.load(f)
         except FileNotFoundError:
             print("Error: El archivo games.json no se encontró en la carpeta 'data'.")
             self.games = []
 
-        # Layout principal
         main_layout = QHBoxLayout(self)
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.setSpacing(0)
 
-        # Panel derecho
         right_panel_container = QWidget()
         right_panel_container.setObjectName("RightPanelContainer")
         right_layout = QVBoxLayout(right_panel_container)
@@ -61,16 +60,13 @@ class Launcher(QWidget):
         right_layout.addWidget(header_label)
         right_layout.addWidget(self.scroll)
 
-
         main_layout.addWidget(right_panel_container, 1)
 
-        # Cargar los botones de los juegos
         self.populate_games()
 
     def setup_background(self):
         self.background_label = QLabel(self)
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        background_path = os.path.join(script_dir, "assets", "xbox.gif")
+        background_path = os.path.join(self.base_path, "assets", "background.gif")
 
         if not os.path.exists(background_path):
             print(f"Advertencia: No se encontró el archivo de fondo en {background_path}")
@@ -79,36 +75,34 @@ class Launcher(QWidget):
 
         if background_path.lower().endswith('.gif'):
             self.movie = QMovie(background_path)
-            self.movie.setScaledSize(self.size())  # Escalar solo una vez
+            self.movie.setScaledSize(self.size())
             self.background_label.setMovie(self.movie)
             self.movie.start()
         else:
-            pixmap = QPixmap(background_path).scaled(
+            self.bg_pixmap = QPixmap(background_path)
+            self._update_static_background()
+
+    def _update_static_background(self):
+        if self.bg_pixmap and not self.bg_pixmap.isNull():
+            scaled = self.bg_pixmap.scaled(
                 self.size(), Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation
             )
-            self.background_label.setPixmap(pixmap)
+            self.background_label.setPixmap(scaled)
 
     def resizeEvent(self, event):
         super().resizeEvent(event)
         w, h = self.width(), self.height()
 
-        # Ajustar QLabel del fondo
         self.background_label.setGeometry(0, 0, w, h)
         self.background_label.lower()
 
-        # Si es GIF, reescalarlo
-        if hasattr(self, "movie") and self.movie is not None:
+        if self.movie:
             self.movie.setScaledSize(self.background_label.size())
-        # Si es imagen estática, reescalarla
-        elif hasattr(self.background_label, "pixmap") and self.background_label.pixmap() is not None:
-            pix = self.background_label.pixmap()
-            if pix:
-                scaled = pix.scaled(w, h, Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation)
-                self.background_label.setPixmap(scaled)
-
+        elif self.bg_pixmap:
+            self._update_static_background()
 
     def populate_games(self):
-        if self.grid_layout.count():  # Limpiar grid si ya hay widgets
+        if self.grid_layout.count():
             while self.grid_layout.count():
                 child = self.grid_layout.takeAt(0)
                 if child.widget():
@@ -130,11 +124,9 @@ class Launcher(QWidget):
         button = GridButton(game_data, row, col, self.grid_layout)
         button.setFixedSize(COVER_WIDTH, COVER_HEIGHT)
 
-        # Pre-escalar la imagen sin redondear (más rápido)
         image_path = game_data.get("image")
         if image_path:
-            script_dir = os.path.dirname(os.path.abspath(__file__))
-            cover_full_path = os.path.join(script_dir, image_path)
+            cover_full_path = os.path.join(self.base_path, image_path)
             pixmap = QPixmap(cover_full_path)
             if not pixmap.isNull():
                 scaled_pixmap = pixmap.scaled(

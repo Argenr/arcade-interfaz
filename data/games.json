@@ -1,0 +1,211 @@
+[
+  {
+    "name": "Metal Slug",
+    "path": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\Games\\MetalSlug.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\metalslug.jpg"
+  },
+  {
+    "name": "Donkey Kong",
+    "emulator": "C:/Emus/SNES9x/snes9x.exe",
+    "rom": "C:/Roms/mario.smc",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Super Mario Bros",
+    "emulator": "C:/Emus/SNES9x/snes9x.exe",
+    "rom": "C:/Roms/mario.smc",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Street Fighter",
+    "emulator": "C:/Emus/SNES9x/snes9x.exe",
+    "rom": "C:/Roms/mario.smc",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Los Simpsons",
+    "emulator": "C:/Emus/SNES9x/snes9x.exe",
+    "rom": "C:/Roms/mario.smc",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Metal Slug",
+    "emulator": "C:/Emus/SNES9x/snes9x.exe",
+    "rom": "C:/Roms/mario.smc",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Mortal Kombat",
+    "emulator": "C:/Emus/SNES9x/snes9x.exe",
+    "rom": "C:/Roms/mario.smc",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Marvel vs Capcom",
+    "emulator": "C:/Emus/SNES9x/snes9x.exe",
+    "rom": "C:/Roms/mario.smc",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Teenage Mutant Ninja Turtles",
+    "emulator": "C:/Emus/SNES9x/snes9x.exe",
+    "rom": "C:/Roms/mario.smc",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "The Legend of Zelda",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Metroid",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "F-Zero",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Pokémon (Game Boy)",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Banjo-Kazooie",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Bomberman",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Sonic the Hedgehog",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Tekken",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Resident Evil",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "GTA San Andreas",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Doom",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Worms",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "The Binding of Isaac",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Terraria",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Stardew Valley",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "BroForce",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Plantas vs Zombies",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Snake (Nokia)",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Bounce (Nokia)",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Diamond Rush",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Asphalt",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Reigns",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Hollow Knight",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Dredge",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Inside",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Balatro",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Castle Crashers",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Cuphead",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "FIFA",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "My paper boat",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  },
+  {
+    "name": "Gulos tales",
+    "path": "C:/Games/Bioshock/bioshock.exe",
+    "image": "C:\\Users\\argen\\Escritorio\\Interfaz\\data\\covers\\link.jpg"
+  }
+
+]

@@ -1,6 +1,5 @@
-from PySide6.QtGui import QPixmap
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QPainter, QPainterPath
+from PySide6.QtGui import QPixmap, QPainter, QPainterPath
 
 # Constantes para el tamaño de las carátulas
 COVER_WIDTH = 200
